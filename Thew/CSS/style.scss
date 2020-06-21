@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: url(../image/banner.png) center center no-repeat fixed;
+    background-size: cover;
+    .leftarrow{
+        position: absolute;
+        top: 300px;
+    }
+    .rightarrow{
+        position: absolute;
+        right: 0;
+        top: 300px;
+    }
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    .player{
+        margin-left: 10px;
+        video{
+            width: 550px;
+            height: 330px;
+        }
+    }
+
+    .text{
+        text-align: center;
+        display: grid;
+        font-size: 63.05px; 
+        .yellow{
+            color: #f5c506;
+            margin: 0 auto;
+        }
+        .white{
+            color: #ffffff;
+            margin: 0 auto;
+       }
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+        p{
+            margin: 0;
+            color: #ffffff;
+            font-size: 41.05px;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-variant: small-caps; 
+        }
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f5c506;
+        text-align: center;
+        a{
+            box-shadow: -5px -5px 0 rgba(245,197,6,0.5),
+             -10px -10px 0 rgba(245,197,6,0.2);
+            border-left: 0.5px solid #dcb105;
+            padding: 12px 0;
+            font-size: 17.05px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #9b7d08;
+            text-decoration: none;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+main{
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        .imgs{
+            margin-top: 50px;
+            display: grid;
+            justify-items: center;
+            p{
+                
+                text-align: center;
+                font-size: 27.05px;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+        }
+    }
+    .information{
+        background: url(../image/infoback.png) center center no-repeat fixed;
+        background-size: cover; 
+        .info{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            img{
+                justify-self: center;;
+            }
+        }
+    }
+}
